@@ -6,57 +6,93 @@
   <meta charset="utf-8">
   <style>
     /*Global Styles*/
-
-    a {
-      color: #0FF;
-    }
-    h1 {
-      margin-top: 0;
-    }
-    h2 {
-      font-size: 30px;
-    }
-    html {
+    html, body {
       margin: 0;
       padding: 0;
     }
-    
-    /*Social Style*/
-
-    .social-link a {
-      background: rgba(150, 150, 150, 0.5);
-      color: #0FF;
+    h1 {
+      font-size: 7vh;
+      margin-top: 0;
     }
-
+    a{
+      color: #f00;
+    }
     /*Hero Styles*/
 
     .full-hero {
       background-color: #c7dbfc;
       height: 50vh;
     }
+    /*Social Style*/
+    .social-link {
+      background: rgba(150, 150, 150, 0.5);
+      border-radius: 99px;
+      box-sizing: border-box
+      color: fff;
+      display: inline-block;
+      font-family: helvetica, arial, sans;
+      font-size: 1rem;
+      font-weight: bold;
+      height: 2.5em;
+      line-height: 1;
+      padding-top: 0.85em;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      width: 2.5em;
+    }
+
+    /*Social Links*/
+    .social-list{
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    .social-list > li {
+      display: inline-block;
+      margin: 0 0.5em;
+    }
 
     /*Bio Styles*/
 
     .bio-wrapper {
       font-size: 24px;
+      margin: auto;
+      max-width: 960px;
+      overflow: hidden;
     }
-
     .bio-box {
       border: 1px solid #000;
-      font-size: 1em;
-      width: 50%;
+      box-sizing: border-box;
+      float: left;
+      font-size: 1rem;
+      margin: 40px 1% 0;
+      padding: 0 2% 2%;
+      width: 23%;
     }
-
     .bio-box h3 {
-      font-size: 1.5rem;
+      color: #fff;
+      font-size: 1.5em;
+      margin: -40px 0 1em;
+      text-align: center;
     }
-
+    .bio-box img {
+      width: 100%;
+    }
     .bio-copy {
       font-size: 1em;
+      line-height: 1.5;
     }
-
     .bio-copy a {
-      color: #00FF00;
+      color: green;
+    }
+    .bio-wrapper:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
     }
   </style>
 </head>
@@ -64,21 +100,22 @@
 <body>
   <div class="full-hero hero-home">
     <h1>I'm an h1</h1>
-    <ul class="social-link">
+    <ul class="social-list">
       <li>
-        <a href="http://example.com/">Link</a>
+        <a href="http://example.com/" class="social-link">Fb</a>
       </li>
       <li>
-        <a href="#operations-bio">Link</a>
+        <a href="#operations-bio" class="social-link">Tw</a>
       </li>
       <li>
-        <a href="http://example.com/">Link</a>
+        <a href="http://example.com/" class="social-link">Gh</a>
       </li>
     </ul>
   </div>
   <h2>I'm an h2</h2>
   <div class="bio-wrapper">
     <div class="bio-box">
+      <img src="http://placekitten.com/g/400/400">
       <h3>Michael Hartl</h3>
       <a href="http://twitter.com/mhartl/" class="social-link">here</a>
       <div class="bio-copy">
@@ -92,6 +129,7 @@
       </div>
     </div>
     <div class="bio-box">
+      <img src="http://placekitten.com/g/400/400">
       <h3>Lee Donahoe</h3>
       <a href="http://twitter.com/leedonahoe/" class="social-link">here</a>
       <div class="bio-copy">
@@ -101,6 +139,7 @@
       </div>
     </div>
     <div class="bio-box">
+      <img src="http://placekitten.com/g/400/400">
       <h3>Nick Merwin</h3>
       <a href="http://twitter.com/nickmerwin/" class="social-link">here</a>
       <div class="bio-copy">
@@ -110,12 +149,29 @@
       </div>
     </div>
     <div class="bio-box">
+      <img src="http://placekitten.com/g/400/400">
       <h3>??</h3>
       <p>
         The Future
       </p>
     </div>
   </div>
+  <p>
+    Learn Enough to Be Dangerous is a leader in the movement to teach the world <em>technical sophistication</em>, which includes both "hard skills" like coding, command lines, and version control, and "soft skills" like guessing keyboard shortcuts, Googling error messages, and knowing when to just reboot the darn thing.
+  </p>
+  <p>
+    We believe there are <strong>at least a billion people</strong> who can benefit from learning technical sophistication, probably more. To join our movement,
+    <a href="https://learnenough.com/#email_list">sign up for our offical email list</a> now.
+  </p>
+  <h3>Background</h3>
+  <p>
+    Learn Enough to Be Dangerous is an outgrowth of the
+    <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a> and the
+    <a href="https://www.softcover.io/">Softcover publishing platform</a>.
+    This page is part of the same site for
+    <a href="https://learnenough.com/css-tutorial"><em>Learn Enough CSS and Layout to Be Dangerous</em></a>, which teaches the basics of <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets, the language that allows web pages to be styled. Other related tutorials can be found at
+    <a href="https://learnenough.com/">learnenough.com</a>
+  </p>
 </body>
 
 </html>
